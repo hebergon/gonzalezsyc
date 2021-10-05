@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/*     Sass Template    */
+
+/* clases globales */
+
+a.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+a.back-to-top i {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff !important;
+  background: #0272e2;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top:hover, a.back-to-top:focus {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#modal {
+  z-index:999999 !important;
+}
+
+.centrado{
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+.center-horizontal {
+  text-align: center;
+}
+
+#frame {
+  max-width: 100%;
+  height: 100%;
+}
+
+.logo-small {
+  color: #003859;
+  font-size: 50px;
+}
+
+.logo {
+  color: #003859;
+  font-size: 200px;
+}
+
+#logogde {
+  max-height: fit-content;
+}
+
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.container-fluid {
+  padding: 1em;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+/* Responsive */
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  #somos {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  #somos {
+    display: none;
+  }
+
+  #nos {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+/* Barras de navegación */
+
+#navbarb {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+#navbar2.navbar-nav li a:hover, #navbar2.nav-link li.active a {
+  color: #fff !important;
+  background-color: #003859 !important;
+}
+
+#navbar2.navbar li a, #navbar2.navbar #navbar2.navbar-brand {
+  color: #003859 !important;
+}
+
+#navbar2 {
+  margin-bottom: 0;
+  z-index: 9999;
+  border: 0;
+  line-height: 1.42857143 !important;
+  letter-spacing: 2px;
+  border-radius: 0;
+}
+
+#navbar2.navbar-nav li a.active {
+  border-bottom: 2px solid #003859;
+}
+
+/* Clases de tipografias */
+.font-shadows {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-roboto {
+  font-family: "Roboto", cursive;
+}
+
+.font-lato {
+  font-family: "Lato", cursive;
+}
+
+.font-monse {
+  font-family: "Montserrat", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Colores */
+.primary-color {
+  color: #003859;
+}
+
+.primary-color-bg {
+  background: #003859;
+}
+
+.secondary-color {
+  color: #EBF5FB;
+}
+
+.secondary-color-bg {
+  background: #EBF5FB;
+}
+
+.color-gray {
+  background: #c7c7c7;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.azul {
+  color: #253356;
+}
+
+.fondo-azul {
+  background-color: #253356;
+}
+
+
+.bg-grey {
+  background-color: #F2F4F4;
+}
+
+/* Animaciones */
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
+
+/* Botones */
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #FFF;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid black;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #0272e2;
+  color: white;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Estilo a las tarjertas */
+.card {
+  border: none;
+}
+
+.cardd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 0.0625rem solid #E5E7EB;
+  border-radius: 1rem;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 0;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Galería */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.border-gray-300 {
+  border-color: #E5E7EB !important;
+}
+
+/* Estilo de logo facebook */
+.fab {
+  
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+#links a{
+  color: white;
+  opacity: 0.5;
+}
+
+#footer hr{
+  border-top: 0.5px solid #A9A9A9;
+}
+
+#tels p{
+  color: white;
+  opacity: 0.5;
+}
+
+
